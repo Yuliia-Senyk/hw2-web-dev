@@ -1,0 +1,182 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: 'Arial';
+  min-height: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 100px;
+  width: 100%;
+  padding: 2%;
+  background-color: rgb(102, 0, 204);
+}
+
+#header__sections {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 35%;
+  gap: 5%;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+aside {
+  height: 70%;
+}
+
+nav {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 1%;
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  padding: 0.5% 2%;
+  box-sizing: border-box;
+}
+
+a:hover {
+  transition: all 0.2s;
+  background-color: rgb(243, 203, 81);
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  background-color: rgb(35, 57, 90);
+  color: white;
+  display: flex;
+  gap: 20%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-top: 100px;
+  padding: 2% 0;
+  top: 70%;
+  width: 100%;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type='file'] {
+  display: none;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 16px;
+  padding: 2% 6%;
+}
+
+input:focus {
+  outline: none;
+}
+
+.roles-pick {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.btn {
+  background-color: rgb(35, 57, 90);
+  color: white;
+  border-radius: 5px;
+  padding: 2% 4%;
+  cursor: pointer;
+  border: 1px solid rgb(35, 57, 90);
+}
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+  height: 60%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+td {
+  text-align: center;
+}
+
+th {
+  padding: 10px 0;
+}
+
+.red-text {
+  color: red;
+}
+.blue-text {
+  color: blue;
+}
+.green-background {
+  background-color: green;
+}
+.yellow-background {
+  background-color: yellow;
+}
+.underline-text {
+  text-decoration: underline;
+}
+.italic-text {
+  font-style: italic;
+}
+.bold-text {
+  font-weight: bold;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>First Task</title>
+  </head>
+  <body>
+    <header>
+      <img width="5%" height="100%" alt="logo" src="images/Exponential-Circle-White-1.webp" />
+      <div id="header__sections">
+        <section>Section 1</section>
+        <section>Section 2</section>
+        <section>Section 3</section>
+        <section>Section 4</section>
+      </div>
+    </header>
+    <aside>
+      <nav>
+        <ul>
+          <li><a href="index.html">User form</a></li>
+          <li><a href="pages/inline-text-elements.html">Inline text elements</a></li>
+          <li><a href="pages/media.html">Media</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <p class="title">User Form</p>
+      <form id="user-form">
+        <input id="username" placeholder="Enter your username" type="text" />
+        <input id="password" placeholder="Enter your password" type="password" />
+
+        <label class="text-align-center btn" for="file">Choose your icon</label>
+        <input id="file" type="file" />
+
+        <p class="text-align-center">Do you have any roles ?</p>
+
+        <div class="roles-pick">
+          <div class="flex-column">
+            <label for="moderator">Moderator</label>
+            <label for="admin">Admin</label>
+            <label for="helper">Helper</label>
+            <label for="vip">VIP</label>
+          </div>
+
+          <div class="flex-column">
+            <input name="moderator" id="moderator" type="checkbox" />
+            <input name="admin" id="admin" type="checkbox" />
+            <input name="helper" id="helper" type="checkbox" />
+            <input name="vip" id="vip" type="checkbox" />
+          </div>
+        </div>
+
+        <div>
+          <p class="text-align-center">Gender</p>
+          <div class="input-with-label">
+            <input name="gender" id="male" value="male" type="radio" />
+            <label for="male">Male</label>
+          </div>
+          <div class="input-with-label">
+            <input name="gender" id="female" value="female" type="radio" />
+            <label for="female">Female</label>
+          </div>
+        </div>
+
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </main>
+
+    <footer>
+      <table>
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Roles</th>
+            <th>Gender</th>
+          </tr>
+        </thead>
+        <tbody id="users-data"></tbody>
+      </table>
+    </footer>
+  </body>
+  <script async src="scripts/index.js"></script>
+</html>
